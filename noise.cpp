@@ -55,9 +55,9 @@ float** generateFallOffMap(int w, int h, float intensity)
 
 float** generateNoise(int width, int height, int size, int oct)
 {
-    float** buffer = new float*[HEIGHT];
-    for(int i = 0; i < HEIGHT; i++)
-        buffer[i] = new float[WIDTH];
+    float** buffer = new float*[width];
+    for(int i = 0; i < height; i++)
+        buffer[i] = new float[width];
     
     for (int i = 0; i < width; i++)
         for (int j = 0; j < height; j++)

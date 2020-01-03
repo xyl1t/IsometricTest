@@ -39,7 +39,7 @@ inline int screenToWorldX(int x, int y) {
     return ((x - TILE_WIDTH_HALF - ORIGIN_X * TILE_WIDTH) / (float)TILE_WIDTH_HALF + (y - ORIGIN_Y * TILE_HEIGHT) / (float)TILE_HEIGHT_HALF) / 2;
 }
 inline int screenToWorldY(int x, int y) {
-    return ((y - ORIGIN_Y * TILE_HEIGHT) / (float)TILE_HEIGHT_HALF - ((y - TILE_WIDTH_HALF - ORIGIN_X * TILE_WIDTH) / (float)TILE_WIDTH_HALF)) / 2;
+    return ((y - ORIGIN_Y * TILE_HEIGHT) / (float)TILE_HEIGHT_HALF - ((x - TILE_WIDTH_HALF - ORIGIN_X * TILE_WIDTH) / (float)TILE_WIDTH_HALF)) / 2;
 }
 
 float lerp(float v0, float v1, float t);
